@@ -1,0 +1,106 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+/* Assign the color */
+:root{
+    --neutral:#f4f1de;
+    --correct:#81b29a;
+    --incorrect: #e07a5f;
+    --textInCard:#3d405b;
+    --text:#f2cc8f;
+    --background:#3d405b;
+}
+
+/* Setup the body */
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background)
+}
+
+/* Setup the BTN */
+.BTN{
+    background-color: var(--neutral);
+    color: var(--textInCard);
+    border: 2px solid var(--background);
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.BTN:hover{
+    border-color: #669bbc;
+}
+
+.correct{
+    background-color: var(--correct);
+    color: white;
+}
+
+.incorrect{
+    background-color: var(--incorrect);
+    color: white;
+}
+
+.container{
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.answerBTN{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap:10px;
+    margin: 20px 0;
+}
+
+.startBTN, .nextBTN{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.control{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.hide{
+    display: none;
+}
+
+.rules{
+    color: var(--textInCard);
+}
+
+.rulesHeader{
+    display: flex;
+    justify-content: center;
+}
+
+.rulesBody{
+    display: grid;
+    justify-content: center;
+    gap: 3px;
+    margin-bottom: 10px;
+}
+
+.question{
+    display: flex;
+    justify-content: center;
+    color: var(--textInCard);
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
