@@ -9,16 +9,18 @@
     <link rel="stylesheet" href="./Asset/CSS/style.css">
     <!-- Script -->
     <script src="./Asset/JS/script.js" defer></script>
-
+    <button id="VHS" class="VHS on">View High Score</button>
 </head>
 <body>
+    
     <div class="container">
-    <div id="questionContainer" class="hide">
+        <div class="timer" id="timer">60 seconds left.</div>
+        <div id="questionContainer" class="hide">
         <div id="question" class="question"></div>
         <div id="anwerBTN" class="answerBTN">
-            <button class="BTN correct">Answer1</button>
+            <button class="BTN">Answer1</button>
             <button class="BTN">Answer2</button>
-            <button class="BTN incorrect" >Answer3</button>
+            <button class="BTN">Answer3</button>
             <button class="BTN">Answer4</button>
 
         </div>
@@ -30,17 +32,37 @@
         <ul class="rulesBody">
             <li>There will be 10 multiple choice question</li>
             <li>Each Question worth 10 pts</li>
-            <li>You have 30 seconds for each question</li>
+            <li>You have 100 seconds for the quiz</li>
             <li>If the time is up, you will be move to the next question</li>
             <li>You can not go back to the previous question</li>
             <li>After you finish, you can view your score</li>
             <li>Good luck and have fun!!!</li>
         </ul>
     </div>
+
+    <div id="result" class="result hide">
+        <div class="resultHeader"><h2>Result</h2></div>
+        <div class="resultBody">
+            <p>Your score:<span id="score">xxx</span>/100</p>
+            <form id="nameSubmit">
+                <label for=name >Name</label>
+                <input type="text" name="name" id="name">
+                <input for=name type="submit" value="submit" id="submit">
+            </form>
+        </div>
+    </div>
+    
+    <div class="highScore hide" id="highScore">
+        <div class="highScoreHeader"><h2>High Score</h2></div>
+        <div class="highScoreBody" id="highScoreBody"></div>
+        <p>Name: <span id="nameDisplay">N/A</span> Score: <span id="scoreDisplay">N/A</span></p>
+        <p></p>
+    </div>
     <div class="control">
     <button id="startBTN" class="startBTN BTN">Start</button>
     <button id="nextBTN" class="nextBTN BTN hide">Next</button>
     <button id="finishBTN" class="finishBTN BTN hide">Finish</button>
+    <button id="backBTN" class="backBTN BTN hide">Back to Home</button>
      </div>
 
 
