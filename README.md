@@ -1,18 +1,21 @@
-## Password Generator Starter Code
-# generate a random password base on the acceptance criteria below
+## Code Quiz
+# design a website to make a pop out quiz with timer, high score feature.
 
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN asked for character types to include in the password
-THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
+AS A coding boot camp student
+I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
+SO THAT I can gauge my progress compared to my peers
+
+GIVEN I am taking a code quiz
+WHEN I click the start button
+THEN a timer starts and I am presented with a question
+WHEN I answer a question
+THEN I am presented with another question
+WHEN I answer a question incorrectly
+THEN time is subtracted from the clock
+WHEN all questions are answered or the timer reaches 0
+THEN the game is over
+WHEN the game is over
+THEN I can save my initials and score
+
+![](Asset/Image/ScreenShot.png)
+https://ricky8221.github.io/Module_4_Challenge_QiChen/
